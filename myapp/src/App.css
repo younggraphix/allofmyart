@@ -2,31 +2,100 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App-header h1 {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+.App-header h2 {
+  font-size: .8rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+  margin: 3rem 0 2rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+nav li a {
+  color: #333;
+  font-size: .8rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+.image-feed {
+  margin: auto;
+  max-width: 90%;
+  width: 1150px;
+}
+
+.image-wrapper {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.image-description {
+  background: rgba(0, 0, 0, 0.28);
+  bottom: 0;
+  box-sizing: border-box;
   color: white;
+  cursor: pointer;
+  height: calc(100% - 2rem - 6px);
+  line-height: 31rem;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: calc(100% - 2rem);
 }
 
-.App-link {
-  color: #61dafb;
+.projects-wrapper {
+  margin: auto;
+  max-width: 90%;
+  width: 1500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects-wrapper >div .description-wrapper {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 2rem;
+  text-align: left;
+  vertical-align: top;
+  width: 30%;
+}
+
+.projects-wrapper >div .description-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.projects-wrapper >div .image-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
 }
