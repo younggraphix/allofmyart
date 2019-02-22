@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render() {
       return (
-          <div></div>
+          <div>
+              <a href="mailto:austin@younggraphix.com" target="_top">Contact Me</a>
+          </div>
       )
     }
 }

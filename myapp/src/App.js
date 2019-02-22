@@ -11,6 +11,11 @@ class App extends Component {
         <h2>literally all of my art</h2>
         </header>
         <Router />
+        <footer>
+          <span>&copy;2019</span><div className="bullet" />
+          <span>Younggraphix LLC</span><div className="bullet" />
+          <span>Built by Austin Young</span>
+        </footer>
       </div>
     );
   }

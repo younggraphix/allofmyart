@@ -38,6 +38,10 @@ nav li a:hover {
   color: black;
 }
 
+p {
+  font-size: .8rem;
+}
+
 .image-feed {
   margin: auto;
   max-width: 90%;
@@ -72,6 +76,11 @@ nav li a:hover {
   width: calc(100% - 2rem);
 }
 
+a.middle-link {
+  display: block;
+  margin: 1rem auto;
+}
+
 .projects-wrapper {
   margin: auto;
   max-width: 90%;
@@ -98,4 +107,22 @@ nav li a:hover {
   display: inline-block;
   vertical-align: top;
   width: 70%;
+}
+
+footer {
+  padding: 3rem 0;
+}
+
+footer span {
+  font-size: .8rem;
+  margin: 0 1rem;
+}
+
+footer .bullet {
+  display: inline-block;
+  border-radius: 100%;
+  background: black;
+  width: .2rem;
+  height: .2rem;
+  vertical-align: middle;
 }
