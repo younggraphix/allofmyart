@@ -17,6 +17,7 @@
 }
 
 nav {
+  background-color: white;
   margin: 3rem 0 2rem;
 }
 
@@ -38,10 +39,19 @@ nav li a:hover {
   color: black;
 }
 
+nav li a.active {
+  color: #ff9191;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 p {
   font-size: .8rem;
 }
 
+/* home specific styles */
 .image-feed {
   margin: auto;
   max-width: 90%;
@@ -81,13 +91,14 @@ a.middle-link {
   margin: 1rem auto;
 }
 
+/* projects specific styles */
 .projects-wrapper {
   margin: auto;
   max-width: 90%;
   width: 1500px;
 }
 
-.projects-wrapper >div .description-wrapper {
+.projects-wrapper > div .description-wrapper {
   box-sizing: border-box;
   display: inline-block;
   padding-right: 2rem;
@@ -96,19 +107,53 @@ a.middle-link {
   width: 30%;
 }
 
-.projects-wrapper >div .description-wrapper h2 {
+.projects-wrapper > div .description-wrapper h2 {
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
-.projects-wrapper >div .image-wrapper {
+.projects-wrapper > div .image-wrapper {
   display: inline-block;
   vertical-align: top;
   width: 70%;
 }
 
+/* about me styles */
+.about-wrapper dl {
+  border: solid 1px black;
+  margin: auto;
+  padding: 2rem 2rem 3rem 2rem;
+  text-align: left;
+  width: 400px;
+}
+
+.about-wrapper dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.about-wrapper ul {
+  margin: auto;
+  width: 300px;
+}
+
+.about-wrapper ul li {
+  margin: auto;
+  text-align: left;
+  width: fit-content;
+}
+
+.about-wrapper ul:first-of-type {
+  list-style-type: circle;
+}
+
+.about-wrapper ul:last-of-type {
+  list-style-type: square;
+}
+
+/* footer specific styles */
 footer {
   padding: 3rem 0;
 }
