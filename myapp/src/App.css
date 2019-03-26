@@ -59,7 +59,7 @@ p {
 }
 
 .image-wrapper {
-  width: 33%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -156,6 +156,55 @@ a.middle-link {
 
 .about-wrapper ul:last-of-type {
   list-style-type: square;
+}
+
+/* contact page styles */
+.contact form {
+  font-size: .8rem;
+  margin: auto;
+  width: 400px;
+}
+
+.contact form fieldset {
+  margin: 1rem 0;
+}
+
+.contact form div {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+.contact form label {
+  vertical-align: top;
+  margin-right: 1rem;
+}
+
+.contact input, .contact select, .contact textarea {
+  padding: .3rem;
+  border: solid 1px #c1c1c1;
+  border-radius: .2rem;
+}
+
+.contact input, .contact textarea {
+  background: white;
+  color: #333;
+}
+
+.contact form .radios label {
+  margin-right: .2rem;
+  margin-left: 1rem;
+}
+
+.contact form textarea {
+  vertical-align: top;
+}
+
+.contact form button {
+  color: white;
+  border: none;
+  font-size: .9rem;
+  padding: 1rem 3rem;
+  background: #333;
 }
 
 /* footer specific styles */
