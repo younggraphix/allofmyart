@@ -117,7 +117,7 @@ class Home extends Component {
                 </li> */}
             </ul>
             <a href="#middle" className="middle-link">To Middle</a>
-            <a href="#">Back to top</a>
+            <button href="#">Back to top</button>
           </div>
       )
     }

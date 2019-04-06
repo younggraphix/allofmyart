@@ -199,12 +199,31 @@ a.middle-link {
   vertical-align: top;
 }
 
-.contact form button {
+.contact button {
   color: white;
+  cursor: pointer;
   border: none;
   font-size: .9rem;
   padding: 1rem 3rem;
   background: #333;
+}
+
+.contact button:hover {
+  opacity: .9;
+}
+
+.contact .submitted-popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  left: 0;
+  z-index: 1;
+  height: 100px;
+  width: 500px;
+  margin: auto;
+  background: white;
 }
 
 /* footer specific styles */

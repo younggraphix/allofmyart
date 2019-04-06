@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import DGM2120 from "./components/DGM2120"
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
