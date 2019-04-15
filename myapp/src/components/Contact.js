@@ -37,7 +37,7 @@ class Contact extends Component {
 
     alert('Please fill out ' + offendingInput)
   }
-
+  
   submitForm = () => {
     this.setState({
       formSubmitted: true
@@ -55,7 +55,7 @@ class Contact extends Component {
 
     return (
         <div className="contact">
-            <form>
+            <form action="../FormToEmail.php">
                 <fieldset className="personal-info">
                     <legend>Personal Info</legend>
                     <div>

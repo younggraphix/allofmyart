@@ -19,10 +19,9 @@ class Home extends Component {
             isHovering: !state.isHovering
         };
     }
-
     render() {
       return (
-          <div>
+          <div style={wrapperStyles}>
             <ul className="image-feed">
             <ReactComment text="home page" />
                 {/* <li className="image-wrapper" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
@@ -121,6 +120,13 @@ class Home extends Component {
           </div>
       )
     }
+}
+
+
+const wrapperStyles = {
+    margin: 'auto',
+    boxShadow: '2px 2px 3px 0px black',
+    width: '90%'
 }
 
 export default Home

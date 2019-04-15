@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App-header {
+  background: url('/img/header-bg.jpg') top center;
+  background-size: 5%;
+}
 .App-header h1 {
   font-size: 1rem;
   font-weight: 100;
@@ -14,6 +18,9 @@
   font-weight: 100;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px blue;
 }
 
 nav {
@@ -26,6 +33,16 @@ nav li {
   margin: 0 1rem;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+@media(max-width: 900px) {
+  nav li {
+    box-shadow: 1px 1px 1px 1px black;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    width: 80%;
+  }
 }
 
 nav li a {
@@ -44,6 +61,8 @@ nav li a.active {
 }
 
 body {
+  background: url('/img/bg-gradient.png') top center;
+  background-size: contain;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,28 +70,43 @@ p {
   font-size: .8rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+
+
 /* home specific styles */
-.image-feed {
+ul.image-feed {
   margin: auto;
   max-width: 90%;
+  padding: 0;
   width: 1150px;
 }
-
-.image-wrapper {
-  width: 20%;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  box-sizing: border-box;
+@media(max-width: 900px) {
+  li.image-wrapper {
+    min-width: 350px;
+  }
 }
 
-.image-wrapper figure {
+li.image-wrapper {
+  background: linear-gradient(#ff00eb, red);
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 20%;
+}
+
+li.image-wrapper figure {
+  background: white;
   border: solid 1px #eee;
+  box-shadow: 2px 2px 3px 0px black;
   margin: 1rem;
   padding: 1rem;
 }
 
-.image-wrapper img {
+li.image-wrapper img {
   width: 100%;
 }
 
@@ -96,6 +130,8 @@ a.middle-link {
   margin: 1rem auto;
 }
 
+
+
 /* projects specific styles */
 .projects-wrapper {
   margin: auto;
@@ -111,7 +147,6 @@ a.middle-link {
   vertical-align: top;
   width: 30%;
 }
-
 .projects-wrapper > div .description-wrapper h2 {
   font-size: 1rem;
   font-weight: 100;
@@ -124,6 +159,25 @@ a.middle-link {
   vertical-align: top;
   width: 70%;
 }
+@media(max-width: 900px) {
+  .projects-wrapper > div .description-wrapper {
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .projects-wrapper >div .description-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+  .projects-wrapper > div .image-wrapper {
+    width: 100%;
+  }
+}
+
+
 
 /* about me styles */
 .about-wrapper dl {
@@ -151,12 +205,26 @@ a.middle-link {
 }
 
 .about-wrapper ul:first-of-type {
+  color: #11fbff;
+  background: url('/img/unicorn-bg.jpg') top center;
   list-style-type: circle;
+  background-size: 3rem;
+  padding: 2rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px blue;
 }
 
 .about-wrapper ul:last-of-type {
+  color: #11fbff;
+  background: url('/img/pancake-bg.jpg') top center;
   list-style-type: square;
+  background-size: 3rem;
+  padding: 2rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px blue;
 }
+
+
 
 /* contact page styles */
 .contact form {
