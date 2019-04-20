@@ -31,6 +31,15 @@ class About extends Component {
           </dd>
         </dl>
         <a href='https://instagram.com/pixelvoyager/'>My Instagram</a>
+        <h3>A Designer I Admire:</h3>
+        <iframe width="560" maxWidth="100%" height="315" src="https://www.youtube.com/embed/zOPA0NaeTBk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <h3>A Song I Wrote</h3>
+        <audio controls>
+          <source src="/sample_audio.ogg" type="audio/ogg" />
+          <source src="/sample_audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        
       </div>
     )
   }

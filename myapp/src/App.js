@@ -12,6 +12,7 @@ class App extends Component {
         </header>
         <Router />
         <footer>
+          <a href="/brochure.pdf" target="_blank">see brochure</a>
           <span>&copy;2019</span><div className="bullet" />
           <span>Younggraphix LLC</span><div className="bullet" />
           <span>Built by Austin Young</span>

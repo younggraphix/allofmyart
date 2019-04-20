@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SimpleMap from './SimpleMap';
 import Popup from './Popup';
 
 class Contact extends Component {
@@ -116,6 +117,13 @@ class Contact extends Component {
             </form>
             <button onClick={this.validateForm()}>Send Request</button>
             { this.state.formSubmitted ? <Popup /> : '' }
+            <div className="googleMap">
+              <div className="map-direction">
+                <h3>Find My Business:</h3>
+                <p>Lakewood Drive, Prove, UT 84601</p>
+              </div>
+              <SimpleMap />
+            </div>
         </div>
     )
   }

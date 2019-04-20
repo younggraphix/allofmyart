@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-header {
-  background: url('/img/header-bg.jpg') top center;
-  background-size: 5%;
-}
 .App-header h1 {
   font-size: 1rem;
   font-weight: 100;
@@ -18,9 +14,7 @@
   font-weight: 100;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  color: white;
   font-weight: bold;
-  text-shadow: 1px 1px 4px blue;
 }
 
 nav {
@@ -61,8 +55,6 @@ nav li a.active {
 }
 
 body {
-  background: url('/img/bg-gradient.png') top center;
-  background-size: contain;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -90,7 +82,6 @@ ul.image-feed {
 }
 
 li.image-wrapper {
-  background: linear-gradient(#ff00eb, red);
   box-sizing: border-box;
   display: inline-block;
   position: relative;
@@ -101,7 +92,6 @@ li.image-wrapper {
 li.image-wrapper figure {
   background: white;
   border: solid 1px #eee;
-  box-shadow: 2px 2px 3px 0px black;
   margin: 1rem;
   padding: 1rem;
 }
@@ -205,23 +195,17 @@ a.middle-link {
 }
 
 .about-wrapper ul:first-of-type {
-  color: #11fbff;
-  background: url('/img/unicorn-bg.jpg') top center;
   list-style-type: circle;
   background-size: 3rem;
   padding: 2rem;
   font-size: 3rem;
-  text-shadow: 1px 1px 1px blue;
 }
 
 .about-wrapper ul:last-of-type {
-  color: #11fbff;
-  background: url('/img/pancake-bg.jpg') top center;
   list-style-type: square;
   background-size: 3rem;
   padding: 2rem;
   font-size: 3rem;
-  text-shadow: 1px 1px 1px blue;
 }
 
 
@@ -294,9 +278,97 @@ a.middle-link {
   background: white;
 }
 
+.contact .googleMap {
+  margin: 2rem auto;
+}
+
+.contact .googleMap > *{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2rem;
+}
+
+.contact .googleMap .map-direction {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.contact .googleMap h3 {
+  font-weight: bold;
+}
+
+.contact .googleMap .my-marker {
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.contact .googleMap .my-marker div {
+  border: 2px solid red;
+  border-radius: 3rem;
+  height: 1rem;
+  left: -1.5rem;
+  position: absolute;
+  top: -.3rem;
+  width: 1rem;
+}
+
+.portfolio {
+  margin: auto;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.portfolio table {
+  cursor: pointer;
+  margin: auto;
+  text-align: left;
+  width: 100%;
+}
+
+.portfolio thead {
+  background: blue;
+}
+
+.portfolio thead .header-row th {
+  color: white;
+  padding: .5rem 0 .5rem .5rem;
+}
+
+.portfolio th {
+  font-weight: 200;
+}
+
+.portfolio th:hover {
+  opacity: .7;
+}
+
+.portfolio th:nth-of-type(2) {
+  max-width: 400px;
+}
+
+.portfolio th:first-of-type {
+  color: red;
+}
+
+.portfolio .header-row th {
+  color: black;
+  font-weight: 600;
+}
+
+.portfolio tr:nth-child(even) {
+  background-color: #eee;
+}
+
 /* footer specific styles */
 footer {
   padding: 3rem 0;
+}
+
+footer a {
+  display: block;
+  margin: 0 auto 2rem;
 }
 
 footer span {
