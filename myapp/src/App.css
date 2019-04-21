@@ -344,6 +344,10 @@ a.middle-link {
   opacity: .7;
 }
 
+.portfolio td {
+  padding: 0.5rem;
+}
+
 .portfolio th:nth-of-type(2) {
   max-width: 400px;
 }

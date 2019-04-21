@@ -14,14 +14,14 @@ class Portfolio extends Component {
               </thead>
               <tbody>
                 <tr>
-                  <th>Lead Designer</th>
-                  <th>Led creation of dozens of brands and products</th>
-                  <th>May 2015 - Present</th>
+                  <td>Lead Designer</td>
+                  <td>Led creation of dozens of brands and products</td>
+                  <td>May 2015 - Present</td>
                 </tr>
                 <tr>
-                  <th>Freelance Designer</th>
-                  <th>Worked with a number of private clients to develop branding and websites</th>
-                  <th>June 2017 - Present</th>
+                  <td>Freelance Designer</td>
+                  <td>Worked with a number of private clients to develop branding and websites</td>
+                  <td>June 2017 - Present</td>
                 </tr>
                 <tr className="header-row">
                   <th>Education</th>
@@ -29,14 +29,14 @@ class Portfolio extends Component {
                   <th>Dates</th>
                 </tr>
                 <tr>
-                  <th>Associates Degree of Science</th>
-                  <th>Utah Valley University</th>
-                  <th>20101</th>
+                  <td>Associates Degree of Science</td>
+                  <td>Utah Valley University</td>
+                  <td>20101</td>
                 </tr>
                 <tr>
-                  <th>Current Student Applying to Design Program</th>
-                  <th>Utah Valley University</th>
-                  <th>Present</th>
+                  <td>Current Student Applying to Design Program</td>
+                  <td>Utah Valley University</td>
+                  <td>Present</td>
                 </tr>
               </tbody>
             </table>
