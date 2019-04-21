@@ -14,7 +14,6 @@
   font-weight: 100;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 nav {
@@ -73,8 +72,10 @@ ul.image-feed {
   margin: auto;
   max-width: 90%;
   padding: 0;
+  overflow: hidden;
   width: 1150px;
 }
+
 @media(max-width: 900px) {
   li.image-wrapper {
     min-width: 350px;
@@ -83,21 +84,27 @@ ul.image-feed {
 
 li.image-wrapper {
   box-sizing: border-box;
+  cursor: pointer;
   display: inline-block;
+  max-width: 33%;
+  padding: 1rem;
   position: relative;
   vertical-align: top;
-  width: 20%;
+  width: 330px;
 }
 
-li.image-wrapper figure {
-  background: white;
-  border: solid 1px #eee;
-  margin: 1rem;
-  padding: 1rem;
-}
 
 li.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .4s ease;
   width: 100%;
+}
+li.image-wrapper img:hover {
+  max-width: 150%;
+  width: auto;
 }
 
 .image-description {
