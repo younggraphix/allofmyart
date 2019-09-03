@@ -60,18 +60,16 @@ var imageArray = [
     [
         'dissolver',
         'ea990f4a-060f-4a41-b521-1a9671e7619e_rw_1200.jpg'
+    ],
+    [
+        'hidden valley',
+        'hiddenvalley.png'
+    ],
+    [
+        '10-1-17',
+        '10-1-17.png'
     ]
 ] 
-
-const Images = ({imageArray}) => (
-    <>
-        {imageArray.map(image => (
-            <li className="image-wrapper">
-                <img key={image[0]} src={'/img/' + image[1]} alt={image[0]} />
-            </li>
-        ))}
-    </>
-);
 
 class Home extends Component {
     constructor(props) {
@@ -91,14 +89,41 @@ class Home extends Component {
         };
     }
 
-   
+    showImageDetails = (source) => {
+        this.setState({
+            imageExpanded: true,
+            imageSource: source
+        })
+    }
+
+    showExpanded = () => {
+        return (
+            <div className="expanded-wrapper" onClick={(e) => this.toggleExpand()}>
+                <i className="expanded-exit" />
+                <img src={'/img/' + this.state.imageSource} />
+            </div>
+        )
+    }
+
+    toggleExpand = () => {
+        this.setState({
+            imageExpanded: !this.state.imageExpanded
+        })
+    }
 
     render() {
       return (
           <div>
             <ul className="image-feed">
-                <Images imageArray={imageArray} />
+                <>
+                    {imageArray.map(image => (
+                        <li className="image-wrapper">
+                            <img key={image[0]} src={'/img/' + image[1]} alt={image[0]} onClick={(e) => this.showImageDetails(image[1])} />
+                        </li>
+                    ))}
+                </>
             </ul>
+            { this.state.imageExpanded ? this.showExpanded() : ''}
           </div>
       )
     }

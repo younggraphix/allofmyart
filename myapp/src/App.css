@@ -1,7 +1,22 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
 .App {
   text-align: center;
 }
-
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: white;
+}
 .App-header h1 {
   font-size: 1rem;
   font-weight: 100;
@@ -19,6 +34,11 @@
 nav {
   background-color: white;
   margin: 3rem 0 2rem;
+  position: fixed;
+  top: 3.4rem;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 nav li {
@@ -72,6 +92,7 @@ ul.image-feed {
   margin: auto;
   max-width: 90%;
   padding: 0;
+  padding-top: 10rem;
   overflow: hidden;
   width: 1150px;
 }
@@ -95,16 +116,12 @@ li.image-wrapper {
 
 
 li.image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   transition: all .4s ease;
   width: 100%;
 }
+
 li.image-wrapper img:hover {
-  max-width: 150%;
-  width: auto;
+  opacity: .7;
 }
 
 .image-description {
@@ -122,12 +139,24 @@ li.image-wrapper img:hover {
   width: calc(100% - 2rem);
 }
 
-a.middle-link {
-  display: block;
-  margin: 1rem auto;
+.expanded-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.75);
 }
 
-
+.expanded-wrapper >img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 70vh;
+}
 
 /* projects specific styles */
 .projects-wrapper {
@@ -174,7 +203,44 @@ a.middle-link {
   }
 }
 
+/* portfolio styles */
+.portfolio {
 
+}
+.portfolio-navbar {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.portfolio.selected .portfolio-navbar {
+  margin: 0;
+}
+.portfolio.selected .portfolio-navbar li{
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 1.5rem;
+}
+.portfolio-navbar li {
+  cursor: pointer;
+  margin:  3rem auto;
+}
+.portfolio-navbar li:hover {
+  opacity: .7;
+}
+.portfolio .logos {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+}
+.portfolio .logos .logo-wrapper {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+}
 
 /* about me styles */
 .about-wrapper dl {
@@ -214,8 +280,6 @@ a.middle-link {
   padding: 2rem;
   font-size: 3rem;
 }
-
-
 
 /* contact page styles */
 .contact form {
