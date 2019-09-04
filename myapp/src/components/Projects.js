@@ -15,7 +15,7 @@ class Projects extends Component {
                     <a href="https://trapezelabs.io/#/home" target="_blank" rel="noopener noreferrer">Go To Site</a>
                 </div>
                 <div className="image-wrapper">
-                    <img src="./img/2f42416a-dbcc-4888-ba32-7a27746996b2.gif" alt=""/>
+                    <img src="./img/logos/2f42416a-dbcc-4888-ba32-7a27746996b2.gif" alt=""/>
                 </div>
             </div>
           </div>

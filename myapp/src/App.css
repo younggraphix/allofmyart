@@ -70,7 +70,7 @@ nav li a:hover {
 }
 
 nav li a.active {
-  color: #ff9191;
+  color: #4f92b9;
 }
 
 body {
@@ -78,7 +78,12 @@ body {
 }
 
 p {
-  font-size: .8rem;
+  font-size: 1rem;
+}
+
+blockquote {
+  font-weight: bold;
+  margin: 2rem 0;
 }
 
 img {
@@ -140,15 +145,22 @@ li.image-wrapper img:hover {
 }
 
 .expanded-wrapper {
+  background: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
 
-.expanded-wrapper >img {
+.expanded-wrapper .expanded-scroller >img {
+  display: inline-block;
+  margin: 0 2rem;
+  vertical-align: top;
+  height: 100%;
+}
+.expanded-wrapper .expanded-scroller {
   position: absolute;
   left: 0;
   right: 0;
@@ -162,6 +174,7 @@ li.image-wrapper img:hover {
 .projects-wrapper {
   margin: auto;
   max-width: 90%;
+  padding-top: 12rem;
   width: 1500px;
 }
 
@@ -205,7 +218,7 @@ li.image-wrapper img:hover {
 
 /* portfolio styles */
 .portfolio {
-
+  padding-top: 10rem;
 }
 .portfolio-navbar {
   list-style: none;
@@ -215,10 +228,11 @@ li.image-wrapper img:hover {
 }
 .portfolio.selected .portfolio-navbar {
   margin: 0;
+  margin-bottom: 3rem;
 }
 .portfolio.selected .portfolio-navbar li{
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 0 1.5rem;
 }
 .portfolio-navbar li {
@@ -227,6 +241,9 @@ li.image-wrapper img:hover {
 }
 .portfolio-navbar li:hover {
   opacity: .7;
+}
+.portfolio-navbar li.active {
+  color: #4f92b9;
 }
 .portfolio .logos {
   display: flex;
@@ -241,47 +258,37 @@ li.image-wrapper img:hover {
   padding: 1rem;
   overflow: hidden;
 }
+.portfolio .print .print-wrapper {
+  margin: 1rem auto;
+}
+.portfolio .print .print-wrapper img {
+  max-height: 690px;
+}
 
 /* about me styles */
-.about-wrapper dl {
-  border: solid 1px black;
-  margin: auto;
-  padding: 2rem 2rem 3rem 2rem;
+.about-wrapper {
+  padding-top: 11rem;
+}
+.about-wrapper p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 0 auto 3rem;
+  max-width: 800px;
   text-align: left;
-  width: 400px;
-}
-
-.about-wrapper dt {
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-.about-wrapper ul {
-  margin: auto;
-  width: 300px;
-}
-
-.about-wrapper ul li {
-  margin: auto;
-  text-align: left;
-  width: fit-content;
-}
-
-.about-wrapper ul:first-of-type {
-  list-style-type: circle;
-  background-size: 3rem;
-  padding: 2rem;
-  font-size: 3rem;
-}
-
-.about-wrapper ul:last-of-type {
-  list-style-type: square;
-  background-size: 3rem;
-  padding: 2rem;
-  font-size: 3rem;
 }
 
 /* contact page styles */
+.contact {
+  padding-top: 11rem;
+}
+.contact ul li h3 {
+  display: inline-block;
+}
+.contact ul li p {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
 .contact form {
   font-size: .8rem;
   margin: auto;
@@ -376,7 +383,7 @@ li.image-wrapper img:hover {
 }
 
 .contact .googleMap .my-marker div {
-  border: 2px solid red;
+  border: 2px solid #4f92b9;
   border-radius: 3rem;
   height: 1rem;
   left: -1.5rem;
@@ -424,7 +431,7 @@ li.image-wrapper img:hover {
 }
 
 .portfolio th:first-of-type {
-  color: red;
+  color: #4f92b9;
 }
 
 .portfolio .header-row th {

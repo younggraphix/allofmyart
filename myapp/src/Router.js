@@ -18,7 +18,7 @@ const AppRouter = () => (
       <Route path="/projects/" component={Projects} />
       <Route path="/portfolio/" component={Portfolio} />
       <Route path="/contact/" component={Contact} />
-      <Route path="/about/" component={About} />"
+      <Route path="/about/" component={About} />
     </div>
   </Router>
 );
