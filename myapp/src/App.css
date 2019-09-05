@@ -47,14 +47,41 @@ nav li {
   text-transform: uppercase;
   vertical-align: middle;
 }
-
+@media(min-width: 901px) {
+  .hamburger {
+    display: none;
+  }
+}
 @media(max-width: 900px) {
+  .hamburger i {
+    width: 9vw;
+    background: rgba(0, 0, 0, 0.31);
+    height: 2px;
+    display: block;
+    margin: 2.5vw auto;
+  }
+  header, nav {
+    position: static !important;
+  }
+  nav {
+    margin: 2rem 0 0;
+  }
+  nav ul {
+    visibility: hidden;
+    height: 0;
+  }
+  nav.expanded ul {
+    visibility: visible;
+    height: auto;
+  }
   nav li {
-    box-shadow: 1px 1px 1px 1px black;
     display: block;
     margin: auto;
     padding: 1rem;
     width: 80%;
+  }
+  .image-feed, .portfolio, .projects-wrapper, .contact, .about-wrapper {
+    padding-top: 0 !important;
   }
 }
 
@@ -153,7 +180,16 @@ li.image-wrapper img:hover {
   width: 100vw;
   z-index: 2;
 }
-
+.expanded-wrapper >img {
+  max-width: 80vw;
+  max-height: 80vh;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .expanded-wrapper .expanded-scroller >img {
   display: inline-block;
   margin: 0 2rem;
