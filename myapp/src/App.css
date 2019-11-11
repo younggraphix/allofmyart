@@ -83,6 +83,9 @@ nav li {
   .image-feed, .portfolio, .projects-wrapper, .contact, .about-wrapper {
     padding-top: 0 !important;
   }
+  li.image-wrapper {
+    padding: 0;
+  }
 }
 
 nav li a {
@@ -299,6 +302,12 @@ li.image-wrapper img:hover {
 }
 .portfolio .print .print-wrapper img {
   max-height: 690px;
+}
+.portfolio .web-design ul li {
+  margin: 1rem 0;
+}
+.portfolio .web-design ul li a {
+  color: black;
 }
 
 /* about me styles */

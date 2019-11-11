@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logos from './Logos.js'
 import Branding from './Branding.js'
 import Print from './Print.js'
+import WebDesign from './WebDesign.js'
 
 class Portfolio extends Component {
   constructor(props) {
@@ -90,6 +91,7 @@ class Portfolio extends Component {
           {this.state.showLogos ? <Logos /> : ''}
           {this.state.showBranding ? <Branding /> : ''}
           {this.state.showPrint ? <Print /> : ''}
+          {this.state.showWebDesign ? <WebDesign /> : ''}
         </div>
     )
   }
