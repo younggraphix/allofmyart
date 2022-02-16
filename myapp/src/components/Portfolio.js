@@ -11,7 +11,6 @@ class Portfolio extends Component {
       showLogos: false,
       showBranding: false,
       showWebDesign: false,
-      showPhotography: false,
       showPrint: false,
       portfolioItemSelected: false
     }
@@ -32,7 +31,6 @@ class Portfolio extends Component {
           showLogos: true,
           showBranding: false,
           showWebDesign: false,
-          showPhotography: false,
           showPrint: false
         })
       break
@@ -41,7 +39,6 @@ class Portfolio extends Component {
           showLogos: false,
           showBranding: true,
           showWebDesign: false,
-          showPhotography: false,
           showPrint: false
         })
       break
@@ -50,16 +47,6 @@ class Portfolio extends Component {
           showLogos: false,
           showBranding: false,
           showWebDesign: true,
-          showPhotography: false,
-          showPrint: false
-        })
-      break
-      case 'photography':
-        this.setState({
-          showLogos: false,
-          showBranding: false,
-          showWebDesign: false,
-          showPhotography: true,
           showPrint: false
         })
       break
@@ -68,7 +55,6 @@ class Portfolio extends Component {
           showLogos: false,
           showBranding: false,
           showWebDesign: false,
-          showPhotography: false,
           showPrint: true
         })
       break
@@ -86,7 +72,6 @@ class Portfolio extends Component {
             <li onClick={(e) => this.showPortfolioSelection('branding')} className={this.state.showBranding ? 'active' : ''}>Branding</li>
             <li onClick={(e) => this.showPortfolioSelection('print')} className={this.state.showPrint ? 'active' : ''}>Print</li>
             <li onClick={(e) => this.showPortfolioSelection('web')} className={this.state.showWebDesign ? 'active' : ''}>Web Design</li>
-            <li onClick={(e) => this.showPortfolioSelection('photography')} className={this.state.showPhotography ? 'active' : ''}>Photography</li>
           </ul>
           {this.state.showLogos ? <Logos /> : ''}
           {this.state.showBranding ? <Branding /> : ''}
